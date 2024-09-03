@@ -11,3 +11,162 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, red, yellow);
+  padding: 9px;
+}
+nav input{
+  width: 250px;
+  text-decoration: none;
+  padding: 9px;
+  font-size: 18px;
+  border: none;
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border-radius: 20px; /* Rounded corners */
+  padding: 8px; /* Padding for better appearance */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for scaling and shadow */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Default shadow */
+}
+
+.searchBar:focus-within {
+  transform: scale(1.05); /* Slightly increase size when focused */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow when focused */
+}
+
+nav button {
+  width: 70px;
+  height: 38px;
+  background-color: blue;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5), 0 4px 8px rgba(255, 255, 0, 0.5); /* Mixed red and yellow shadow */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  
+}
+
+nav button:hover {
+  background-color: red;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.7), 0 4px 8px rgba(255, 255, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+nav button:active {
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.9); /* Red shadow on click */
+}
+nav ul{
+  display: flex;
+  gap: 11px;
+
+}
+.cardContainer{
+  display: flex;
+  justify-content: center;
+  gap:41px;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  width: 320px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(255, 255, 255, 0.3); /* Mixed black and white shadow */
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 21px;
+  border: 1px solid rgb(236, 236, 236);
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for scaling and shadow */
+}
+
+.card:hover { 
+  transform: scale(1.05); /* Increase size on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(255, 255, 255, 0.5); /* Enhanced shadow on hover */
+}
+
+.card img{
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+}
+.card .title{
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -7px;
+}
+.card .title:hover{
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.card .content{
+  padding: 9px;
+}
+.card button {
+  background-color: rgb(29, 162, 214); /* Initial background color */
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 28px;
+  color: white;
+  font-size: 13px;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5), 0 4px 8px rgba(255, 255, 0, 0.5); /* Mixed red and yellow shadow */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.card button:hover {
+  background-color: red; /* Change background on hover */
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.7), 0 4px 8px rgba(255, 255, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+.card button:active {
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.9); /* Red shadow on click */
+}
+
+.categoryBtn{
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+}
+.categoryBtn button {
+  gap: 11px;
+  width: 130px;
+  height: 33px;
+  background-color: rgb(255, 108, 108); /* Initial background color */
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 20px; /* Rounded corners */
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 2px;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5), 0 4px 8px rgba(255, 255, 0, 0.5); /* Mixed red and yellow shadow */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.categoryBtn button:hover {
+  background-color: red; /* Change background on hover */
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.7), 0 4px 8px rgba(255, 255, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+.categoryBtn button:active {
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.9); /* Red shadow on click */
+}
+
+
+
+.head{
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+}
